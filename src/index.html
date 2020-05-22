@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terra's Daily Journal</title>
-    <link rel="stylesheet" href="styles/journal.css" />
+    <link rel="stylesheet" href="styles/journal.css">
   </head>
   <body>
     <h1>Daily Journal</h1>
     <form action="">
       <fieldset>
         <label for="journalDate">Date of Entry</label>
-        <input type="date" name="journalDate" id="journalDate" />
+        <input type="date" name="journalDate" id="journalDate">
       </fieldset>
 
       <fieldset>
         <label for="journalConcepts">Concepts Covered</label>
-        <input type="text" name="journalConcepts" id="journalConcepts" />
+        <input type="text" name="journalConcepts" id="journalConcepts">
       </fieldset>
 
       <fieldset>
         <label for="journalEntry">Journal Entry</label>
-        <!-- <input type="textarea" name="journalEntry" id="journalEntry" /> -->
         <textarea rows="3" cols="25" name="journalEntry" id="journalEntry">
         </textarea>
       </fieldset>
@@ -31,38 +30,16 @@
         <select id="journalMood">
           <option value="1">sad</option>
           <option value="2">happy</option>
-          <option value="3">excited</option>
-          <option value="4">scared</option>
-          <option value="5">vexed</option>
-          <option value="6">anxious</option>
-          <option value="7">proud</option>
-          <option value="8">angry</option>
-          <option value="9">embarassed</option>
-          <option value="10">let down</option>
-          <option value="11">alone</option>
-          <option value="12">stupid</option>
-          <option value="13">encouraged</option>
-          <option value="14">enlightened</option>
-          <option value="15">humbled</option>
-          <option value="16">numb</option>
-          <option value="17">elated</option>
-          <option value="18">salty</option>
-          <option value="19">decent</option>
-          <option value="20">smart</option>
-          <option value="21">pretty good</option>
-          <option value="22">panicked</option>
-          <option value="23">hopeless</option>
-          <option value="24">hopefull</option>
+          <option value="3">ok</option>
         </select>
       </fieldset>
 
-      <input type="button" value="Record Journal Entry" />
+      <input type="button" value="Record Journal Entry">
     </form>
     <article class="entryLog">
 
     </article>
+    <script type="module" src="scripts/journal.js"></script>
   </body>
-  <script src="scripts/data.js"></script>
-  <script src="scripts/entriesDOM.js"></script>
-  <script src="scripts/entryComponent.js"></script>
+
 </html>

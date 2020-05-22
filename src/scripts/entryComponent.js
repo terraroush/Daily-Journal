@@ -1,5 +1,4 @@
 const makeJournalEntryComponent = (entry) => {
-    // Create your own HTML structure for a journal entry
     return `
         <div class="entryCard">
             <h1>${entry.concepts}</h1>
@@ -9,3 +8,5 @@ const makeJournalEntryComponent = (entry) => {
         </div>    
     `
 }
+
+export default makeJournalEntryComponent
